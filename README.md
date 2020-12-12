@@ -18,12 +18,19 @@ Data Preprocessing:
 
 Column	Details	Required output
 'Value'	Amount with Euro symbol as prefix and suffix ‘K’ or ‘M’ indicating thousands and millions respectively.	Convert to Float after getting rid of currency symbol and suffix.
+
 'Wage'	 Amount with Euro symbol as prefix and suffix ‘K’ or ‘M’ indicating thousands and millions respectively.	Convert to Float after getting rid of currency symbol and suffix.
+
 'Joined'	Year as a string, in some cases complete date as string	Convert to int with only year
+
 'Contract Valid Until'	Date as a string 	Convert to datetime type
+
 'Height'	In inches with a quotation mark 	Convert to Float with decimal points
+
 'Weight'	Contains the suffix lbs 	Remove the suffix and convert to float
+
 'Release Clause'	Amount with Euro symbol as prefix and suffix ‘K’ or ‘M’ indicating thousands and millions respectively.	Convert to Float after getting rid of currency symbol and suffix.
+
 (You might encounter Nan values in the above columns. Pandas treats Nan values as float. Please keep that in mind when making the conversions.)
 
 4.	Check for missing values and do a mean imputation where necessary.
